@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+class number
+{
+	int i ;
+public:
+operator int()  //Basic to class type conversion 
+	{  cout<<endl;
+	return i ;
+	}
+		number( int p=0)
+		{
+			this->i=p;
+			
+		}
+	void setrange()
+	{
+		if (i > 100)
+		i=-15;
+	
+	}
+	void printnumber(){
+		cout<<i;
+	}
+};
+int main(){
+	number obj = 50 ; //autoboxing
+	obj.setrange();
+	obj.printnumber(); 
+	int y = obj ; //unboxing 
+	cout<<y;
+}
