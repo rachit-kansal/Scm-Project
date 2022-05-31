@@ -23,6 +23,7 @@ operator int()  //Basic to class type conversion
 		cout<<i;
 	}
 };
+//Rachit Kansal 2110991799
 int main(){
 	number obj = 50 ; //autoboxing
 	obj.setrange();
